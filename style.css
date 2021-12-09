@@ -428,6 +428,17 @@ table {
 .layout{
   width:450px
 }
+.pdp_link{
+  height: 100%;
+  width: 100%;
+  top:0px;
+  position: absolute;
+  left: 0px;
+  background: transparent;
+}
+.row_cont{
+  position: relative;
+}
 @media (max-width: 768px){
   .row{
     flex-wrap: wrap;
@@ -437,6 +448,7 @@ table {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 100%;
   }
   .page_right{
