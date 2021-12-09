@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="style.css" as="style"/>
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="furniture_box_inner">
+         <header class="page_header">
+            <div class="page_left">
+               <img class="logo" alt="Phone" src="images/logo.png">
+            </div>
+            <div class="page_right">
+            <a class="header_text" href="javascript:void(0)">Who</a>
+            <a class="header_text" href="javascript:void(0)">What</a>
+            <a class="header_text" href="javascript:void(0)">When</a>
+            <a class="header_text" href="javascript:void(0)">Where</a>
+            <a class="header_text" href="javascript:void(0)">Why</a>
+            </div>
+        </header>
+         <h1 class="top_text">Lets Get Customizing!</h1>
+         <nav class="image_header">
+            <p class="picture_row_text">Need Inspiration?</p>
+            <img class="furniture" src="images/image_row.png">
+         </nav>
+         <div class="page_container">
+            <div class="image">
+               <img class="layout" src="images/layout.png">
+               <img class="icon1" src="icon1.png">
+               <img class="icon2" src="icon2.png">
+               <img class="start" src="start.png">
+               <img class="social" src="social.png">
+            </div>
+            <div class="dropdowns">
+               <div class="dropdown">
+                  <div class="dt_cont"id="dt_cont" onclick="show_text()">
+                     <p class="dropdown_text">Layout Options</p>
+                     <img class="dropdown_aarow" src="images/dropdown.svg">
+                  </div>
+                  <div class="container" id="container">
+                     <div id="span">
+                        <input class="select layout__checkbox" data-param="a" type="radio" name="layout_option" id="layout_left" checked="checked">
+                        <label id="label"> Left Chez</label><br>
+                        <img class="left_chez" src="images/chez_left.png">
+                     </div>
+                     <div id="span">
+                        <input class="select layout__checkbox" data-param="b"type="radio" name="layout_option" id="layout_right">
+                        <label id="label"> Right Chez</label><br>
+                        <img class="left_chez" src="images/chez_right.png">
+                     </div>
+                  </div>
+                  <div class="dt_cont" id="dt_cont2" onclick="show_text2()">
+                     <p class="dropdown_text">Upholstery Options</p>
+                     <img class="dropdown_aarow" src="images/dropdown.svg">
+                  </div>
+                  <div class="color_cont" id="color_cont">
+                     <div id="span2">
+                        <img class="color_img color__check" data-param="a" src="images/1.png">
+                        <img class="color_img color__check" data-param="b" src="images/2.png">
+                        <img class="color_img color__check" data-param="c" src="images/3.png">
+                        <img class="color_img color__check" data-param="d" src="images/4.png">
+                        <img class="color_img color__check" data-param="e" src="images/5.png">
+                        <img class="color_img color__check" data-param="f" src="images/6.png">
+                        <img class="color_img color__check" data-param="g" src="images/7.png">
+                        <img class="color_img color__check" data-param="h" src="images/8.png">
+                        <img class="color_img color__check" data-param="i" src="images/9.png">
+                     </div>
+                  </div>
+                  <div class="dt_cont" onclick="show_text3()">
+                     <p class="dropdown_text">Feet Options</p>
+                     <img class="dropdown_aarow" src="images/dropdown.svg">
+                  </div>
+                  <div class="feet_cont" id="feet_cont" onclick="">
+                     <img class="feet_img feet__check" data-param="a" src="images/feet1.png">
+                     <img class="feet_img feet__check" data-param="b" src="images/feet2.png">
+                  </div>
+                  <div class="dt_cont" onclick="show_text4()">
+                     <p class="dropdown_text">Length Options</p>
+                     <img class="dropdown_aarow" src="images/dropdown.svg">
+                  </div>
+                  <div class="length_cont" id="length_cont">
+                    <div id="span">
+                       <input class="select length__checkbox" data-param="a" type="radio" name="length_options" checked="checked">
+                       <label id="label"> Long</label><br>
+                       <p class="check_content">96" x 36"</p>
+                    </div>
+                    <div id="span">
+                       <input class="select length__checkbox" data-param="b" type="radio" name="length_options">
+                       <label id="label">Standard</label><br>   
+                       <p class="check_content">74" x 36"</p>     
+                    </div>
+                    <div id="span">
+                        <input class="select length__checkbox" data-param="c"  type="radio" name="length_options">
+                        <label id="label">Custom size</label><br>
+                        <div class="input_cont">
+                            <input class="custom_inputs">
+                            <p class="x">x</p>
+                            <input class="custom_inputs">
+                        </div>   
+                     </div>
+                 </div>
+               </div>
+            </div>
+         </div>
+         <div class="page_bottom">
+            <input class="money_input" placeholder="$XXX-XXX">
+            <button class="cart">Add to Cart</button>
+         </div>
+         <div class="save_button">
+            <button class="save">Save</button>
+         </div>
+         <footer class="page_footer">
+            <div class="footer_content">
+               <img class="footer_img" src="images/footer_img1.png">
+               <div class="footer_content_text">
+                  <h4 class="footer_head">VALUE ADDED TITLE</h4>
+                  <p class="footer_text">Value Added Text</p>
+               </div>
+            </div>
+            <div class="footer_content">
+               <img class="footer_img" src="images/footer_img2.png">
+               <div class="footer_content_text">
+                  <h4 class="footer_head">VALUE ADDED TITLE</h4>
+                  <p class="footer_text">Value Added Text</p>
+               </div>
+            </div>
+            <div class="footer_content">
+               <img class="footer_img" src="images/footer_img3.png">
+               <div class="footer_content_text">
+                  <h4 class="footer_head">VALUE ADDED TITLE</h4>
+                  <p class="footer_text">Value Added Text</p>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
